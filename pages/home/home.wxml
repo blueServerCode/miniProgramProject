@@ -1,0 +1,14 @@
+<!--pages/home/home.wxml-->
+<view>{{count}}</view>
+<button size="mini" bindtap="btnClick">+</button>
+<button size="mini" bindtap="btnSub">-</button>
+
+<!-- wx与vue不同点：不用(item,index) in hobies,wx会自己创建item和index -->
+<view wx:for="{{hobies}}">{{item}}--{{index}}</view>
+
+<button open-type="getUserInfo" bindgetuserinfo="getInfo">huoqu</button>
+
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+
