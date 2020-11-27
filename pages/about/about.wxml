@@ -1,0 +1,8 @@
+
+<button size="mini" bindtap="changeColor" 
+        class="{{isActive ? 'active' : ''}}">改变颜色</button>
+        <!-- 可以用三元表达式 -->
+
+<view wx:for="{{num}}" wx:key="index">{{item}}</view>
+
+<use-cpn></use-cpn>

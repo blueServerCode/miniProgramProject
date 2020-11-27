@@ -22,7 +22,6 @@ Page({
   },
   getInfo(enent) {
     console.log(enent.detail.userInfo);
-    
   },
 
 
@@ -46,7 +45,7 @@ Page({
   onShow: function () {
     wx.getUserInfo({
       success: function(res) {
-        console.log(res);       
+        // console.log(res);       
       }  
     })
   },
